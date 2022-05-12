@@ -4,7 +4,7 @@
 
 Linguagem: <b>Python</b>
 
-<b><style= "backgroud-color: #fff;" Uninter : Análise e Desenvolvimento de sistemas></style</b></color>
+<b><style= "backgroud-color: #fff" Uninter : Análise e Desenvolvimento de sistemas></style</b></color>
 
 
 <b>Questão 1</b><br>
