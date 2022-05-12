@@ -34,7 +34,7 @@ Enunciado: Imagina-se que você está desenvolvendo um software de controle de e
 4.	Sair
 
 
-<b>Obs:</b>Utilizei funções, while, for, if
+<b>Obs: </b>Utilizei funções, while, for, if
 
  
 
