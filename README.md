@@ -4,7 +4,7 @@
 
 Linguagem: <b>Python</b>
 
-<b>Uninter : Análise e Desenvolvimento de sistemas</b></color>
+<b><style= "backgroud-color: #fff;" Uninter : Análise e Desenvolvimento de sistemas></style</b></color>
 
 
 <b>Questão 1</b><br>
@@ -12,11 +12,3 @@ Imagina-se que você é um dos programadores responsáveis pela construção de 
 
 
 
-<style>
-
-  b{
-   color: #fff;
-}
-  
-  
-</style>
