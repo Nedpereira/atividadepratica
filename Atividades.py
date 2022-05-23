@@ -16,23 +16,23 @@ produto = (input('Escolha o código do produto que deseja efetuar a compra.\nR:'
 quantidade = int(input('Qual a quantidade que deseja levar desse produto?\nR:'))
 
 while(produto == '001'): #Verificando qual produto foi escolhido
-    valor = 20.00  #valor do produto
-    if(quantidade <= 9): #caso o usuário comprar apenas até 9 unidades
-        print('Valor total | sem desconto: R${:.2f}'.format(valor * quantidade)) # Valor do produto x quantidade
+    valor = 20.00  
+    if(quantidade <= 9): 
+        print('Valor total | sem desconto: R${:.2f}'.format(valor * quantidade))
         print('Valor Total | com desconto: R${:.2f}'.format(valor * quantidade))
         print('O desconto efetuado foi de: 0%')
         break
-    elif(quantidade >= 10 and quantidade <= 99): #Caso o usuario comprar de 10 a 99 unidades
-        valor_qt = valor * quantidade #Variavel para guarda valor do produto x quantidade
-        desconto = valor_qt * 5 / 100 #Efetuando o desconto
-        valor_final = valor_qt - desconto #Desconto - valor total da compra
+    elif(quantidade >= 10 and quantidade <= 99): 
+        valor_qt = valor * quantidade 
+        desconto = valor_qt * 5 / 100 
+        valor_final = valor_qt - desconto 
         print('Valor total | sem desconto: R${:.2f}'.format(valor_qt))
         print('Valor total | com desconto: R${:.2f}'.format(valor_final))
         print('O desconto efetuado foi de: 5%')
         break
-    elif(quantidade >= 100 and quantidade <= 999): #Caso o usuário comprar de 100 a 999 unidades
+    elif(quantidade >= 100 and quantidade <= 999): 
         valor_qt = valor * quantidade
-        desconto = valor_qt * 10 / 100 #Efetuando o desconto
+        desconto = valor_qt * 10 / 100 
         valor_final = valor_qt - desconto
         print('Valor total | sem desconto: R${:.2f}'.format(valor_qt))
         print('Valor total | com desconto: R${:.2f}'.format(valor_final))
@@ -72,26 +72,26 @@ print('+', 42 * '-', '+')
 final = 0
 
 while True:
-     produto = input('Escolha seu pedido.\nR:') #Usuário informando o pedido
+     produto = input('Escolha seu pedido.\nR:') 
 
-     if(produto == '100'): #Verificando se é o pedido 100
-         valor = 9.00 #atribuindo valor a variavel
-         final += valor #Colocando o valor na variavel final para ela não 0 com o loop
-     elif(produto == '200'): #Verificando se é o pediddo 200
+     if(produto == '100'): 
+         valor = 9.00 
+         final += valor 
+     elif(produto == '200'): 
          valor = 5.00
          final += valor
      else:
-        print('Opção Invalida!') #caso o usuário digitar um valor diferente de 100 ou 200
+        print('Opção Invalida!') 
         continue
-     print('Deseja escolhe mais algum item?') #Verificando se ele deseja mais algum pedido
+     print('Deseja escolhe mais algum item?') 
      print('Sim - 1')
      print('Não - 0')
-     escolha = int(input('R:')) # Verificando se ele deseja mais algum pedido
+     escolha = int(input('R:')) 
 
      if(escolha == 1):
          continue
      elif(escolha == 0):
-         print('Total a ser pago: R${:.2f}'.format(final)) #Valor final da compra
+         print('Total a ser pago: R${:.2f}'.format(final)) 
          break
      else:
          print('Opção invalida!')
@@ -107,13 +107,13 @@ print('+', 53*'-','+')
 print('|','Empresa de logística - Neder pereira dos santos filho','|')
 print('+', 53*'-','+')
 
-final_dimensoes = 0 # variavel para armazenar dimensoes
-final_rota = 0 # variavel para armanezar rota
-final_peso = 0 # variavel para armanezar peso
+final_dimensoes = 0 
+final_rota = 0 
+final_peso = 0 
 
 #função com saida do valor da dimensão
 def dimensoesObjeto():
- global final_dimensoes #var global
+ global final_dimensoes 
  while True:
    try:
     altura = int(input('Digite a altura em cm.\nR:'))
