@@ -276,7 +276,7 @@ def consultarPeca():
 # função remover
 def removerPeca():
     print('Remover peça:')
-    opremover = input('Digite o código da peça que deseja remover:\nR:')
+    opremover = int(input('Digite o código da peça que deseja remover:\nR:'))
     for peca in listaEstoque:
         if (peca['id'] == opremover):
           listaEstoque.remove(peca) #removendo a peça
